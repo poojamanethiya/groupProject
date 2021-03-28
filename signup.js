@@ -57,6 +57,6 @@ myInput.onkeyup = function() {
   }
 }
   
-document.getElementById('signup').style.display = "block";
+
 
 }
