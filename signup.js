@@ -56,4 +56,7 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+  
+document.getElementById('signup').style.display = "block";
+
 }
