@@ -8,7 +8,7 @@
     <h1>sign up now</h1>
     <form class ="form" id="login">
         <input type="email" class="inputbox" id ="i1" placeholder="your Email">
-        <input type="password" class="inputbox" id="i2" placeholder="your password">
+        <input type="password" class="inputbox" id="i2" placeholder="your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
          <p><span><input type="checkbox"></span>i agree to the terms of services</p>
 <button type="submit" class="signbtn" onclick="myfunc">Sign Up</button>
 <hr>
@@ -17,6 +17,12 @@
 <p>DO YOU HAVE AN ACCOUNT?<a href="#">Sign In</a></p>
     </form>
 </div>
-
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
     </body>
 </html>
