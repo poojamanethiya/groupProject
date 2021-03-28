@@ -9,6 +9,12 @@ var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
 
+  myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+  myInput.onfocus = function() {
+  document.getElementById("message").style.display = "none";
+}
 
 myInput.onkeyup = function() {
   
