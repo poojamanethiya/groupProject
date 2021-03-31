@@ -1,7 +1,7 @@
 function myfunc()
 {
 var nam = document.getElementById("i1").value;
-var mname = document.getElementById("i2").value;
+var mname = document.getElementById("psw").value;
 
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
